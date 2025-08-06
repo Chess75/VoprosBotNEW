@@ -1,7 +1,9 @@
 name: Запуск бота
-
 on:
-    # каждые 5 часов
+
+    workflow_dispatch:
+    schedule:
+    - cron: '0 */100000000 * * *'
 
 jobs:
   run-bot:
